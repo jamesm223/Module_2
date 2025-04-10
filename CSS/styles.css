@@ -1,0 +1,47 @@
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    background-color: rgb(49, 49, 91);
+    font-size: 30px;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    background-color: rgb(223, 67, 67);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 30px;
+    color: white;
+}
+
+p{
+    font-size: 40px;
+}
+
+.side_bar{
+    width: 20%;
+    background-color: rgb(219, 90, 90);
+    color: white;
+
+}
+
+.main_content{
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    height: 80rem;
+}
