@@ -1,15 +1,27 @@
+:root{
+    --blue-lightmode: rgb(73,107,207);
+    --side-background-lightmode: rgb(223, 223, 223);
+    --main-background-lightmode: rgb(255, 255, 255);
+    --white-color: white;
+    --black-color: black;
+    --blue-darkmode: rgb(15, 0, 71);
+    --main-background-darkmode: rgb(41, 41, 41);
+}
+
+
+
 
 header{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: flex-start;
-    width: 100%;
-    background-color: rgb(49, 49, 91);
-    font-size: 30px;
-    color: white;
+    background-color: var(--blue-lightmode);
     padding-top: 15px;
     padding-bottom: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    transition: ease 2s;
 }
 
 footer{
@@ -17,31 +29,90 @@ footer{
     justify-content: center;
     align-items: flex-end;
     width: 100%;
-    background-color: rgb(223, 67, 67);
+    background-color: var(--blue-lightmode);
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 30px;
     color: white;
+    transition: ease 2s;
 }
 
 p{
     font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: ease 2s;
 }
 
 .side_bar{
     width: 20%;
-    background-color: rgb(219, 90, 90);
-    color: white;
-
+    background-color: var(--side-background-lightmode);
+    transition: ease 2s;
 }
 
 .main_content{
-    background-color: rgb(255, 255, 255);
+    background-color: var(--main-background-lightmode);
     width: 80%;
+    transition: ease 2s;
+    padding-left: 20px;
 }
 
 .content{
     display: flex;
     flex-direction: row;
-    height: 80rem;
+    height: calc(90vh - 60px);
+    transition: ease 2s;
+}
+
+button{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 50px;
+    margin-right: 15px;
+    margin-top: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: ease 2s;
+}
+
+h1{
+    margin-left: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: var(--black-color);
+    transition: ease 2s;
+}
+
+.dark-mode button{
+    background-color: var(--white-color);
+    color: var(--black-color);
+    transition: ease 2s;
+}
+
+.dark-mode h1{
+    color: var(--white-color);
+    transition: ease 2s;
+}
+
+.dark-mode header{
+    background-color: var(--blue-darkmode);
+    transition: ease 2s;
+}
+
+.dark-mode footer{
+    background-color: var(--blue-darkmode);
+    transition: ease 2s;
+}
+
+.dark-mode p{
+    color: var(--white-color);
+    transition: ease 2s;
+}
+
+.dark-mode .side_bar{
+    background-color: var(--black-color);
+}
+
+.dark-mode .main_content{
+    background-color: var(--main-background-darkmode);
 }
